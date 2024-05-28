@@ -1,8 +1,19 @@
+/* Geral */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Bootstrap*/
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
 
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+/* Navbar */
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -21,45 +32,24 @@
   -webkit-overflow-scrolling: touch;
 }
 
-.btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
-  --bs-btn-font-weight: 600;
-  --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-  --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
-}
-
-.bd-mode-toggle {
-  z-index: 1500;
-}
-
-body {
-  scroll-behavior: smooth;
-}
-
 #btn_quemSomos,
 #btn_servicos,
 #btn_contato {
   cursor: pointer;
 }
 
-#servicos {
-  opacity: 0;
-}
-
+/* Seção Carrossel */
 #carouselExampleCaptions {
   margin-top: 8vh;
   height: 75vh;
   overflow: hidden;
+}
+
+#carouselExampleCaptions .text-white {
+  bottom: 0; 
+  right: 10px; 
+  position: absolute; 
+  z-index: 1;
 }
 
 .carousel-caption {
@@ -88,6 +78,38 @@ body {
   filter: brightness(0.70);
 }
 
+/* Seção Valores da Empresa*/
+.item-divider {
+  padding-top: 8vh; 
+  padding-bottom: 8vh;
+}
+
+.item-divider:hover {
+  background-color: #f1f1f1;
+  transition: 0.3s;
+}
+
+.item-divider p {
+  font-size: 120%; 
+  font-weight: bold; 
+  color: #505050;
+}
+
+.values i {
+  font-size: 250%; 
+  color: #5c5c5c;
+}
+
+/* Seção Quem Somos*/
+#quemSomos_texts .icon-arrow {
+  color: rgb(13, 110, 253);
+}
+
+#check-list i {
+  font-size: 150%; 
+  color: green;
+}
+
 .image-half {
   height: 100vh;
   /* Tamanho da imagem */
@@ -96,6 +118,11 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 2px;
+}
+
+/* Seção de Serviços*/
+#servicos {
+  opacity: 0;
 }
 
 .card-custom {
@@ -116,7 +143,6 @@ body {
 
 .icon {
   font-size: 24px;
-  /* margin-bottom: 10px; */
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -137,12 +163,25 @@ body {
 
 #card_icon1, #card_icon2, #card_icon3 {
   transition: 0.8s;
+  font-size: 150%;
 }
 
 #card1 img, #card2 img, #card3 img {
   height: 250px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Footer */
+#footer i {
+  color: #fff; 
+  font-size: 2rem;
+}
+
+#footer a {
+  text-decoration: underline #fff;
+}
+
+/* Responsividade */
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (max-width: 576px) {

@@ -7,11 +7,16 @@
     <meta name="description" content="">
     <title>UNIENERGY</title>
     <link rel="icon" type="image/x-icon" href="./logos/favicon.ico">
-
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="./style.css" rel="stylesheet">
 
+    <!-- Bootstrap -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Font-Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
@@ -52,7 +57,7 @@
 
         <!-- Carrossel -->
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <p class="text-white" style="bottom: 0; right: 10px; position: absolute; z-index: 1;">Designed by Freepik</p>
+            <p class="text-white">Designed by Freepik</p>
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -73,7 +78,8 @@
                     <img src="./images/carrossel2.jpg" class="d-block w-100" alt="Imagem 2">
                     <div class="carousel-caption d-md-block">
                         <h5>Qualidade e Confiabilidade</h5>
-                        <p>Utilizamos materiais de alta qualidade e mão de obra qualificada para garantir a durabilidade e eficiência dos sistemas.</p>
+                        <p>Utilizamos materiais de alta qualidade e mão de obra qualificada para garantir a durabilidade
+                            e eficiência dos sistemas.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -96,15 +102,38 @@
             </button>
         </div>
 
+        <!-- Valores da empresa -->
+        <section class="container bg-body-white">
+            <div class="row text-center values">
+                <div class="col d-flex flex-column align-items-center justify-content-center item-divider">
+                    <i class="fas fa-medal" style="margin-bottom: 2vh;"></i>
+                    <p>Qualidade e Excelência</p>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center item-divider">
+                    <i class="fas fa-seedling fa-2x" style="margin-bottom: 2vh;"></i>
+                    <p>Desenvolvimento Sustentável</p>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center item-divider">
+                    <i class="bi bi-shield-shaded"></i>
+                    <p>Segurança e Confiabilidade</p>
+                </div>
+                <div class="col d-flex flex-column align-items-center justify-content-center item-divider">
+                    <i class="bi bi-person-check-fill"></i>
+                    <p>Satisfação do Cliente</p>
+                </div>
+            </div>
+        </section>
+        
+
         <!-- Quem somos -->
-        <section class="container-fluid mt-5" id="quemSomos">
+        <section class="container-fluid " id="quemSomos">
             <div class="row bg-body-tertiary">
                 <div class="col-md-6 image-half"></div> <!-- Metade esquerda com a imagem -->
-                <div class="col-md-6">
-                    <div class="text-half p-5"> <!-- Metade direita com o texto -->
+                <div class="col-md-6"> <!-- Metade direita com o texto -->
+                    <div class="text-half p-5"> 
                         <div id="quemSomos_texts" class="animate__animated animate__fadeInLeft">
                             <h3 class="text-left fw-medium mb-2 mt-4 text-primary">
-                                <i class="bi bi-arrow-right" style="color: rgb(13, 110, 253);"></i>
+                                <i class="bi bi-arrow-right icon-arrow"></i>
                                 QUEM SOMOS
                             </h3>
                             <p class="lead text-left fw-normal">A UNIENERGY é uma empresa fundada no final de 2022 com o
@@ -119,45 +148,45 @@
                                 resultados de alta performance.</p>
 
                             <h4 class="text-left fw-medium mb-2 mt-4 text-primary">
-                                <i class="bi bi-arrow-return-right" style="color: rgb(13, 110, 253);"></i>
+                                <i class="bi bi-arrow-return-right icon-arrow"></i>
                                 Visão
                             </h4>
                             <p class="lead text-left fw-normal">Queremos nos tornar referência em prestação de serviços
                                 elétricos/fotovoltaicos.</p>
                             <h4 class="text-left fw-medium mb-2 mt-4 text-primary">
-                                <i class="bi bi-arrow-return-right" style="color: rgb(13, 110, 253);"></i>
+                                <i class="bi bi-arrow-return-right icon-arrow"></i>
                                 Missão
                             </h4>
                             <p class="lead text-left fw-normal">Difundir formas de energia limpa e sustentáveis e
                                 trabalhar
                                 em prol de melhores formas de execução e manutenção desses sistemas.</p>
                             <h4 class="text-left fw-medium mb-2 mt-4 text-primary">
-                                <i class="bi bi-arrow-return-right" style="color: rgb(13, 110, 253);"></i>
+                                <i class="bi bi-arrow-return-right icon-arrow"></i>
                                 Valores
                             </h4>
-                            <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush" id="check-list">
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Respeito à vida, às pessoas e ao meio ambiente;
                                 </li>
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Crescimento e evolução através do trabalho e da cooperação;
                                 </li>
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Valorizar quem faz a nossa empresa;
                                 </li>
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Incentivo à disciplina e à humildade;
                                 </li>
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Comprometimento com a maior satisfação do cliente;
                                 </li>
                                 <li class="list-group-item bg-body-tertiary">
-                                    <i class="bi bi-plus" style="font-size: 150%; color: green;"></i>
+                                    <i class="bi bi-plus"></i>
                                     Autenticidade e Integridade.
                                 </li>
                             </ul>
@@ -178,7 +207,7 @@
                         <img src="./images/bg1_cards.png" class="card-img-top" alt="Operação e Manutenção O&M">
                         <div class="card-body card-body-custom">
                             <div class="icon" id="iconBG1">
-                                <i class="bi bi-gear-fill" id="card_icon1" style="font-size: 150%;"></i>
+                                <i class="bi bi-gear-fill" id="card_icon1"></i>
                             </div>
                             <h5 class="card-title">Operação e Manutenção - O&M</h5>
                             <p class="card-text text-secondary">Realizamos serviços de limpeza de painéis, avaliação de
@@ -193,7 +222,7 @@
                         <img src="./images/bg2_cards.png" class="card-img-top" alt="Instalações">
                         <div class="card-body card-body-custom">
                             <div class="icon" id="iconBG2">
-                                <i class="bi bi-wrench-adjustable-circle" id="card_icon2" style="font-size: 150%;"></i>
+                                <i class="bi bi-wrench-adjustable-circle" id="card_icon2"></i>
                             </div>
                             <h5 class="card-title">Instalações</h5>
                             <p class="card-text text-secondary">Somos especialistas em instalações de usinas
@@ -207,9 +236,10 @@
                         <img src="./images/bg3_cards.jpg" class="card-img-top" alt="Imagem">
                         <div class="card-body card-body-custom">
                             <div class="icon" id="iconBG3">
-                                <i class="bi bi-lightning-charge-fill" id="card_icon3" style="font-size: 150%;"></i>
+                                <i class="bi bi-lightning-charge-fill" id="card_icon3"></i>
                             </div>
-                            <h5 class="card-title">Instalação e Manutenção Elétrica Comercial, Industrial e Residencial</h5>
+                            <h5 class="card-title">Instalação e Manutenção Elétrica Comercial, Industrial e Residencial
+                            </h5>
                             <p class="card-text text-secondary">Garantimos
                                 qualidade e segurança em instalação de sistemas elétricos novos, reparos em sistemas
                                 existentes, manutenção
@@ -230,35 +260,32 @@
             <div class="col text-center d-none d-md-block"></div>
 
             <div class="col text-center">
-                <i class="bi bi-whatsapp" style="color: #fff; font-size: 2rem;"></i>
+                <i class="bi bi-whatsapp"></i>
                 <p class="text-white">(37) 99927-2353</p>
             </div>
 
             <div class="col text-center">
-                <i class="bi bi-envelope-at" style="color: #fff; font-size: 2rem;"></i>
+                <i class="bi bi-envelope-at"></i>
                 <p class="text-white">unienergy.instalacoes@gmail.com</p>
             </div>
 
             <div class="col text-center">
-                <i class="bi bi-instagram" style="color: #fff; font-size: 2rem;"></i>
-                <a href="https://instagram.com/unienergy.instalacoes?igshid=YmMyMTA2M2Y=" target="_blank"
-                    style="text-decoration: underline #fff;">
+                <i class="bi bi-instagram"></i>
+                <a href="https://instagram.com/unienergy.instalacoes?igshid=YmMyMTA2M2Y=" target="_blank">
                     <p class="text-white">@unienergy_instalacoes</p>
                 </a>
             </div>
 
             <div class="col text-center">
-                <i class="bi bi-linkedin" style="color: #fff; font-size: 2rem;"></i>
-                <a href="https://www.linkedin.com/company/unienergy-instala%C3%A7%C3%B5es/" target="_blank"
-                    style="text-decoration: underline #fff;">
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/company/unienergy-instala%C3%A7%C3%B5es/" target="_blank">
                     <p class="text-white">Unienergy Instalações</p>
                 </a>
             </div>
 
             <div class="col text-center">
-                <i class="bi bi-c-circle" style="color: #fff; font-size: 2rem;"></i>
-                <p class="text-white">UNIENERGY | Todos os direitos
-                    reservados.</p>
+                <i class="bi bi-c-circle"></i>
+                <p class="text-white">UNIENERGY | Todos os direitos reservados.</p>
             </div>
 
             <!--Div vazia-->
@@ -267,9 +294,9 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="./script.js"></script>
-    <!-- JS do Bootstrap -->
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script> <!-- JS do Bootstrap -->
 </body>
 
 </html>
