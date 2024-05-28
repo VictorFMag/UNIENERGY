@@ -62,11 +62,13 @@ body {
 .carousel-caption h5 {
   font-size: 3rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .carousel-caption p {
   font-size: 1.5rem;
   max-width: 45vw;
+  text-align: left;
 }
 
 .carousel-item img {
